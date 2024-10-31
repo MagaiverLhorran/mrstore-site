@@ -10,41 +10,17 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #fff;
-      color: #000;
+      background-color: #fff; /* Muda o fundo para branco */
+      color: #000; /* Cor do texto */
     }
     header {
-      background-color: #343a40;
-      color: #fff;
-      padding: 20px 0;
+      background-color: #fff;
+      color: #000;
+      padding: 10px 0;
       text-align: center;
-      position: relative;
     }
     header img {
-      max-width: 200px;
-    }
-    .hero-section {
-      background-image: url('header-bg.jpg');
-      background-size: cover;
-      background-position: center;
-      color: #fff;
-      text-align: center;
-      padding: 50px 0;
-    }
-    .hero-section h1 {
-      margin-bottom: 10px;
-      font-size: 3em;
-    }
-    .hero-section p {
-      font-size: 1.2em;
-      margin-bottom: 20px;
-    }
-    .hero-section a {
-      padding: 10px 20px;
-      background: #ff0000;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
+      max-width: 150px; /* Aumenta o tamanho da logo */
     }
     nav ul {
       list-style: none;
@@ -52,7 +28,6 @@
       display: flex;
       justify-content: center;
       background-color: #fff;
-      margin: 0;
     }
     nav ul li {
       margin: 0 15px;
@@ -62,56 +37,48 @@
       color: #000;
       font-size: 18px;
       padding: 10px;
-      display: block;
     }
     nav ul li a:hover {
       background-color: #ff0000;
-      color: #fff;
       border-radius: 5px;
     }
     .container {
       width: 80%;
       margin: auto;
       overflow: hidden;
-      padding: 20px 0;
     }
-    .section {
-      padding: 40px 0;
+    .reviews, .about, .cta {
+      background: #f4f4f4;
+      color: #000;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .reviews h2, .about h2, .cta h2 {
+      color: #ff0000;
+    }
+    .cta {
       text-align: center;
     }
-    .section h2 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-    }
-    .section img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 5px;
-      margin-bottom: 20px;
-    }
-    .btn-custom {
+    .cta a {
       display: inline-block;
       padding: 10px 20px;
       background: #ff0000;
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      transition: background 0.3s ease;
-    }
-    .btn-custom:hover {
-      background: #d00000;
     }
     footer {
       text-align: center;
-      padding: 20px 0;
-      background-color: #343a40;
-      color: #fff;
-      box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+      padding: 10px 0;
+      background-color: #fff;
+      color: #000;
     }
     @media screen and (max-width: 768px) {
-      .container {
+      .container, .reviews, .about, .cta, header {
         width: 100%;
+        margin: 10px auto;
         padding: 10px;
       }
       nav ul {
@@ -121,10 +88,7 @@
         margin: 10px 0;
       }
       header img {
-        max-width: 150px;
-      }
-      .hero-section h1 {
-        font-size: 2em;
+        max-width: 120px; /* Aumenta o tamanho da logo para dispositivos móveis */
       }
     }
   </style>
@@ -133,9 +97,43 @@
   <header>
     <div class="container">
       <img src="logo1.png" alt="MR Store Logo">
+      <h1>Bem-vindo à Mr Store</h1>
     </div>
   </header>
-  <div class="
+  <nav>
+    <ul>
+      <li><a href="#home">Início</a></li>
+      <li><a href="#reviews">Avaliações</a></li>
+      <li><a href="#about">Sobre Nós</a></li>
+      <li><a href="#cta">Compre Agora</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <section id="reviews" class="reviews">
+      <h2>Avaliações no Google</h2>
+      <p>Veja o que nossos clientes estão dizendo sobre nós no Google:</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55331.628244688625!2d-51.13630562990684!3d-29.915373196866827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ea208662754e825%3A0xd89ef4ca592a8f20!2sMr%20Store%20Eletr%C3%B4nicos!5e0!3m2!1spt-PT!2sbr!4v1730262675371!5m2!1spt-PT!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section id="about" class="about">
+      <h2>Sobre Nós</h2>
+      <img src="" alt="" class="img-fluid rounded">
+      <p>Somos uma Loja de Eletrônicos Online em Cachoirinha RS. Trabalhamos com as melhores marcas de Fone de Ouvido, carregadores, acessórios em geral, entregamos no mesmo dia, temos 3 meses de garantia nos nossos produtos e oferecemos as melhores condições de pagamento!  </p>
+    </section>
+    <section id="cta" class="cta">
+      <h2>Chame a gente agora no Whatsapp abaixo</h2>
+      <p>Tenha uma experiência em atendimento!</p>
+      <a href="https://wa.me/message/EC3OBFDLFSMTH1" class="btn btn-danger">Nosso Whatsapp</a>
+    </section>
+  </div>
+  <footer>
+    <div class="container">
+      <p>© 2024 Mr Store - Todos os direitos reservados</p>
+      <a href="tel:+5551995881730" class="contact-button">Número de contato</a> <!-- Número de contato como botão -->
+    </div>
+  </footer>
+</body>
+</html>
+
 
 
 
