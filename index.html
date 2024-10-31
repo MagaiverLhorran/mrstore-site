@@ -14,21 +14,13 @@
       color: #000; /* Cor do texto */
     }
     header {
-      background-image: url('header-bg.jpg'); /* Adicione uma imagem de fundo */
-      background-size: cover;
-      background-position: center;
-      color: #fff;
+      background-color: #fff;
+      color: #000;
+      padding: 10px 0;
       text-align: center;
-      padding: 50px 0;
     }
     header img {
-      max-width: 200px; 
-    }
-    .hero-text {
-      background: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
-      display: inline-block;
-      padding: 20px;
-      border-radius: 5px;
+      max-width: 150px; /* Aumenta o tamanho da logo */
     }
     nav ul {
       list-style: none;
@@ -55,45 +47,38 @@
       margin: auto;
       overflow: hidden;
     }
-    .section {
-      padding: 40px 0;
-    }
-    .section img {
-      max-width: 100%;
-      height: auto;
+    .reviews, .about, .cta {
+      background: #f4f4f4;
+      color: #000;
+      padding: 20px;
+      margin: 20px 0;
       border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-    .btn-custom {
+    .reviews h2, .about h2, .cta h2 {
+      color: #ff0000;
+    }
+    .cta {
+      text-align: center;
+    }
+    .cta a {
       display: inline-block;
       padding: 10px 20px;
       background: #ff0000;
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      transition: background 0.3s ease;
-    }
-    .btn-custom:hover {
-      background: #d00000;
     }
     footer {
       text-align: center;
-      padding: 20px 0;
+      padding: 10px 0;
       background-color: #fff;
       color: #000;
-      box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
-    }
-    .contact-button {
-      display: inline-block;
-      padding: 10px 20px;
-      background: #ff0000;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
     }
     @media screen and (max-width: 768px) {
-      .container {
+      .container, .reviews, .about, .cta, header {
         width: 100%;
+        margin: 10px auto;
         padding: 10px;
       }
       nav ul {
@@ -103,7 +88,7 @@
         margin: 10px 0;
       }
       header img {
-        max-width: 150px; 
+        max-width: 120px; /* Aumenta o tamanho da logo para dispositivos móveis */
       }
     }
   </style>
@@ -112,10 +97,7 @@
   <header>
     <div class="container">
       <img src="logo1.png" alt="MR Store Logo">
-      <div class="hero-text">
-        <h1>Bem-vindo ao MR Store</h1>
-        <p>Os melhores produtos para você!</p>
-      </div>
+      <h1>Bem-vindo à Mr Store</h1>
     </div>
   </header>
   <nav>
@@ -127,30 +109,31 @@
     </ul>
   </nav>
   <div class="container">
-    <section id="reviews" class="section">
+    <section id="reviews" class="reviews">
       <h2>Avaliações no Google</h2>
       <p>Veja o que nossos clientes estão dizendo sobre nós no Google:</p>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55331.628244688625!2d-51.13630562990684!3d-29.915373196866827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ea208662754e825%3A0xd89ef4ca592a8f20!2sMr%20Store%20Eletr%C3%B4nicos!5e0!3m2!1spt-PT!2sbr!4v1730262675371!5m2!1spt-PT!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
-    <section id="about" class="section">
+    <section id="about" class="about">
       <h2>Sobre Nós</h2>
-      <img src="" alt="Imagem da loja" class="img-fluid rounded">
+      <img src="" alt="" class="img-fluid rounded">
       <p>Somos uma Loja de Eletrônicos Online em Cachoirinha RS. Trabalhamos com as melhores marcas de Fone de Ouvido, carregadores, acessórios em geral, entregamos no mesmo dia, temos 3 meses de garantia nos nossos produtos e oferecemos as melhores condições de pagamento!  </p>
     </section>
-    <section id="cta" class="section text-center">
+    <section id="cta" class="cta">
       <h2>Chame a gente agora no Whatsapp abaixo</h2>
       <p>Tenha uma experiência em atendimento!</p>
-      <a href="https://wa.me/message/EC3OBFDLFSMTH1" class="btn btn-custom">Nosso Whatsapp</a>
+      <a href="https://wa.me/message/EC3OBFDLFSMTH1" class="btn btn-danger">Nosso Whatsapp</a>
     </section>
   </div>
   <footer>
     <div class="container">
-      <p>© 2024 MR Store - Todos os direitos reservados</p>
-      <a href="tel:+5551995881730" class="contact-button">Número de contato</a>
+      <p>© 2024 Mr Store - Todos os direitos reservados</p>
+      <a href="tel:+5551995881730" class="contact-button">Número de contato</a> <!-- Número de contato como botão -->
     </div>
   </footer>
 </body>
 </html>
+
 
 
 
