@@ -1,21 +1,3 @@
-/* Estilos padrão para telas maiores */
-body {
-  background-color: #000;
-  color: #fff;
-}
-
-.header, .footer {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.container {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
-}
-
 /* Estilos para telas menores */
 @media screen and (max-width: 768px) {
   body {
@@ -23,7 +5,7 @@ body {
     color: #fff;
   }
 
-  .header, .footer {
+  .header, .content, .footer {
     width: 90%;
     margin: 10px auto;
     text-align: center;
